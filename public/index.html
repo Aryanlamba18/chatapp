@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css" />
+    <title>chat app</title>
+</head>
+<body>
+    <h1 class="title">ChatApp</h1>
+    <div class="main">
+      <div class="name">
+        <input
+          type="text"
+          id="name-input"
+          class="name-input"
+          value="anonymous"
+          maxlength="20"
+        />
+      </div>
+
+      <ul class="message-container" id="message-container">
+      </ul>
+
+      <form class="message-form" id="message-form">
+        <input
+          type="text"
+          name="message"
+          id="message-input"
+          class="message-input"
+        />
+        <div class="v-divider"></div>
+        <button type="submit" class="send-button">
+          send
+        </button>
+      </form>
+    </div>
+    <h3 class="clients-total" id="client-total">Total clients: 2</h3>
+    <script src="socket.io/socket.io.js"></script>
+    <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.28.0/moment.min.js"
+    integrity="sha512-Q1f3TS3vSt1jQ8AwP2OuenztnLU6LwxgyyYOG1jgMW/cbEMHps/3wjvnl1P3WTrF3chJUWEoxDUEjMxDV8pujg=="
+    crossorigin="anonymous"
+  ></script>
+    <script src ="main.js"></script>
+</body>
+</html>
