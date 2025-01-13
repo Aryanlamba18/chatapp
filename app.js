@@ -9,13 +9,13 @@ const io = require('socket.io')(server)
 
 app.use(express.static(path.join(__dirname,'public')))
 
-// app.get('/',(req,res)=>{
-//     res.sendFile(path.join(__dirname,'public','login.html'));
-// })
+app.get('/',(req,res)=>{
+    res.sendFile(path.join(__dirname,'public','login.html'));
+})
 
-// app.get('/chat', (req, res) => {
-//     res.sendFile(path.join(__dirname, 'public', 'index.html'));
-// });
+app.get('/mainpage', (req, res) => {
+    res.sendFile(path.join(__dirname, 'public', 'indexi.html'));
+});
 
 
 

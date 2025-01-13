@@ -6,14 +6,14 @@ const nameinput = document.getElementById('name-input');
 const messageform = document.getElementById('message-form');
 const messageinput=document.getElementById('message-input');
 
-// const username= localStorage.getItem('username');
+const username= localStorage.getItem('username');
 
-// if(!username){
-//     window.location.href='/'
-// }
-// else{
-//     nameinput.value=username;
-// }
+if(!username){
+    window.location.href='/'
+}
+else{
+    nameinput.value=username;
+}
 
 messageform.addEventListener('submit',(e) => {
     e.preventDefault();
